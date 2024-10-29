@@ -1,4 +1,180 @@
-/* Other existing styles above... */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #000;
+    color: #e0e0e0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background: #111;
+    color: #0f0;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+
+header:hover {
+    background: #222;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+header nav a {
+    color: #0f0;
+    text-decoration: none;
+    margin: 0 0.75rem;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+header nav a:hover {
+    color: #00ff99;
+    transform: scale(1.1);
+}
+
+/* Sections */
+section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+    background: #111;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 255, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 255, 0, 0.5);
+}
+
+section h2 {
+    color: #0f0;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 8px #0f0;
+}
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills li {
+    margin: 0.5rem 0;
+    color: #e0e0e0;
+}
+
+.project {
+    background: #222;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    color: #e0e0e0;
+    border: 1px solid #0f0;
+    box-shadow: 0 4px 12px rgba(0, 255, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 255, 0, 0.5);
+}
+
+.project h3 {
+    color: #0f0;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+/* Contact */
+#contact p a {
+    color: #0f0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#contact p a:hover {
+    color: #00ff99;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #0f0;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 -4px 8px rgba(0, 255, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 90%;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header nav a {
+        margin: 0.5rem;
+    }
+
+    section {
+        padding: 1.5rem;
+        margin: 1rem auto;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .project {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+    }
+}
 
 /* Skill Bars */
 .skill-bar {
