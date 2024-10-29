@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>J7's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
@@ -12,9 +13,12 @@
     <header>
         <h1>J7 - Aspiring Developer & Designer</h1>
         <nav>
+            <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#testimonials">Testimonials</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -35,11 +39,18 @@
     <!-- Skills Section -->
     <section id="skills">
         <h2>Skills</h2>
-        <ul>
-            <li><strong>Languages:</strong> Python, HTML, CSS, Java (beginner)</li>
-            <li><strong>Technologies:</strong> VS Code, GitHub, Arch Linux, KDE Plasma</li>
-            <li><strong>Interests:</strong> Web Design, Game Development, C# (future learning)</li>
-        </ul>
+        <div class="skill-bar">
+            <label>Python</label>
+            <div class="bar" data-percent="80%"></div>
+        </div>
+        <div class="skill-bar">
+            <label>HTML/CSS</label>
+            <div class="bar" data-percent="70%"></div>
+        </div>
+        <div class="skill-bar">
+            <label>Java</label>
+            <div class="bar" data-percent="30%"></div>
+        </div>
     </section>
 
     <!-- Projects Section -->
@@ -48,8 +59,22 @@
         <div class="project">
             <h3>Codify</h3>
             <p>A programming guide website with resources on languages, tools, IDEs, tips, and more.</p>
+            <img src="project-image.jpg" alt="Codify Project Image" class="project-img">
         </div>
-        <!-- Add more projects as you build them -->
+        <!-- Add more projects -->
+    </section>
+
+    <!-- Education & Certifications -->
+    <section id="education">
+        <h2>Education & Certifications</h2>
+        <p><strong>Algorithmics:</strong> Python Start Course</p>
+        <p><strong>Self-study:</strong> HTML/CSS and Web Design</p>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <blockquote>"J7 is a dedicated and talented young programmer with a bright future!" - Instructor at Algorithmics</blockquote>
     </section>
 
     <!-- Contact Section -->
@@ -57,6 +82,9 @@
         <h2>Contact</h2>
         <p>Reach out via <a href="mailto:your-email@example.com">email</a> or connect on <a href="https://github.com/your-username">GitHub</a>.</p>
     </section>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop">⬆️ Top</button>
 
     <!-- Footer -->
     <footer>
